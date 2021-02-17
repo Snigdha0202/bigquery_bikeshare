@@ -1,0 +1,4 @@
+what is the latest installation date ?
+
+SELECT max(installation_date) FROM `bigquery-public-data.san_francisco.bikeshare_stations` 
+LIMIT 1000
