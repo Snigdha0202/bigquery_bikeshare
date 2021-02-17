@@ -1,0 +1,18 @@
+-- select  the name where the dockcount is 11? --
+
+SELECT * FROM `bigquery-public-data.san_francisco.bikeshare_stations`
+where dockcount = 11 LIMIT 100
+
+-- select name where dock count is 15 and landmark is San Jose?--
+
+SELECT * FROM `bigquery-public-data.san_francisco.bikeshare_stations`
+where dockcount = 15 and landmark = 'San Jose'
+LIMIT 100
+
+-- select average of dockcount where landmark is San Jose?--
+
+SELECT avg(dockcount)
+FROM `bigquery-public-data.san_francisco.bikeshare_stations`
+where landmark = 'San Jose'
+LIMIT 100
+
