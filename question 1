@@ -1,0 +1,4 @@
+what is the minimum dockcount in the dataset ?
+
+SELECT min(dockcount) FROM `bigquery-public-data.san_francisco.bikeshare_stations`
+LIMIT 1000
